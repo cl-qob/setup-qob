@@ -6,7 +6,38 @@
 
 ## 🔨 Usage
 
-WIP
+```yml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    ...
+
+    # Install SBCL
+    - name: Setup SBCL
+      uses: cheeze2000/setup-sbcl@main
+      with:
+        version: 2.4.2
+
+    # Install Qob
+    - uses: cl-qob/setup-qob@master
+      with:
+        version: 'snapshot'
+
+    ...
+```
+
+This example is testing your package in below environment.
+
+* SBCL: `2.4.2`
+* Qob: `snapshot` (latest)
+
+### Inputs
+
+| name         | value  | default  | description                                                                                  |
+|:-------------|:-------|:---------|:---------------------------------------------------------------------------------------------|
+| version      | string | snapshot | The version of Qob to install, e.g. "0.0.8", or "snapshot" for a recent development version. |
+| architecture | string | x64      | The target architecture (x64, arm64) of the Qob-CLI.                                         |
 
 ## ⚜️ License
 
