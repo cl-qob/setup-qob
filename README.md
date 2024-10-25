@@ -1,5 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Release](https://img.shields.io/github/release/cl-qob/setup-qob.svg?logo=github)](https://github.com/cl-qob/setup-qob/releases/latest)
+<a href="#"><img align="right" src="https://raw.githubusercontent.com/cl-qob/cli/master/docs/static/logo.png" width="20%"></a>
 
 # setup-qob
 > Install Qob for GitHub Actions workflow
