@@ -5,6 +5,9 @@
 # setup-qob
 > Install Qob for GitHub Actions workflow
 
+[![CI](https://github.com/cl-qob/setup-qob/actions/workflows/test.yml/badge.svg)](https://github.com/cl-qob/setup-qob/actions/workflows/test.yml)
+[![Build](https://github.com/cl-qob/setup-qob/actions/workflows/build.yml/badge.svg)](https://github.com/cl-qob/setup-qob/actions/workflows/build.yml)
+
 ## 🔨 Usage
 
 ```yml
