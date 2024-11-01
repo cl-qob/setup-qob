@@ -41,7 +41,7 @@ This example is testing your package in below environment.
 
 | name         | value  | default  | description                                                                                  |
 |:-------------|:-------|:---------|:---------------------------------------------------------------------------------------------|
-| version      | string | snapshot | The version of Qob to install, e.g. "0.0.8", or "snapshot" for a recent development version. |
+| version      | string | snapshot | The version of Qob to install, e.g. "0.1.0", or "snapshot" for a recent development version. |
 | architecture | string | x64      | The target architecture (x64, arm64) of the Qob-CLI.                                         |
 
 ## ⚜️ License
