@@ -1,0 +1,29 @@
+name: 'CI'
+on:
+  pull_request:
+  push:
+    paths-ignore:
+    - '**.md'
+    - '**.org'
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        qob_version: [0.1.0, snapshot]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: ./
+      with:
+        version: ${{ matrix.qob_version }}
+
+    - name: Check Qob version
+      run: qob --version
