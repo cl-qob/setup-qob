@@ -14,11 +14,15 @@ jobs:
     steps:
     ...
 
-    # Install SBCL
-    - name: Setup SBCL
-      uses: cheeze2000/setup-sbcl@main
+    - uses: cachix/install-nix-action@v30
+      if: runner.os != 'Windows'
       with:
-        version: 2.4.2
+        nix_path: nixpkgs=channel:nixos-unstable
+
+    - name: Setup SBCL
+      if: runner.os != 'Windows'
+      run: |
+        nix profile install nixpkgs#sbcl
 
     # Install Qob
     - uses: cl-qob/setup-qob@master
