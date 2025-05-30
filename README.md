@@ -40,7 +40,7 @@ This example is testing your package in below environment.
 * SBCL: `2.4.2`
 * Qob: `snapshot` (latest)
 
-### Inputs
+### 📇 Inputs
 
 | Name         | Value  | Default    | Description                                                                                      |
 |:-------------|:-------|:-----------|:-------------------------------------------------------------------------------------------------|
