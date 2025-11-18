@@ -21,7 +21,7 @@ jobs:
         qob_version: [0.1.0, snapshot]
 
     steps:
-    - uses: cachix/install-nix-action@v30
+    - uses: cachix/install-nix-action@v31
       if: runner.os != 'Windows'
       with:
         nix_path: nixpkgs=channel:nixos-unstable
